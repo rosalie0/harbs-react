@@ -6,9 +6,12 @@ import viteLogo from "/vite.svg";
 
 function App() {
   return (
-    <div className="App">
-      <Test />
-      <div>hello</div>
+    <div className="app">
+      <div id="header-placeholder"></div>
+      <div className="main">
+        <Test />
+        <div>hello</div>
+      </div>
       <Footer />
     </div>
   );

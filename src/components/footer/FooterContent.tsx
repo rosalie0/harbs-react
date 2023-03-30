@@ -7,9 +7,9 @@ import {
 
 const FooterContent = () => {
   return (
-    <div className="flex justify-between mx-auto">
+    <div className="py-8 border-t px-4 flex flex-col sm:flex-row justify-around mx-auto">
       <div>
-        <h4>Social Media</h4>
+        <h4 className="font-bold text-md">Social Media</h4>
         <div className="flex gap-4">
           <a href="https://www.instagram.com/harbs1981/">
             <AiOutlineInstagram size={35} />
@@ -21,22 +21,54 @@ const FooterContent = () => {
       </div>
 
       <div className="flex flex-col">
-        <h4>Other sites</h4>
-        <a href="https://www.harbs.co.jp/">HARBS Japan</a>
-        <a href="https://www.harbsnyc.com/">HARBS NYC</a>
+        <h4 className="font-bold border-b text-md">Other sites</h4>
+        <a
+          className="py-1 text-sm hover:underline"
+          href="https://www.harbs.co.jp/"
+        >
+          HARBS Japan
+        </a>
+        <a
+          className="py-1 text-sm hover:underline"
+          href="https://www.harbsnyc.com/"
+        >
+          HARBS NYC
+        </a>
       </div>
 
       <div className="flex flex-col">
-        <h4>Support</h4>
-        <a href="https://www.harbs.co.jp/company/contact_page/">Contact Us</a>
-        <a href="https://www.harbs.co.jp/company/privacy/">Privacy Policy</a>
-        <a href="">Terms of Service</a>
+        <h4 className="font-bold border-b text-md">Support</h4>
+        <a
+          className="py-1 text-sm hover:underline"
+          href="https://www.harbs.co.jp/company/contact_page/"
+        >
+          Contact Us
+        </a>
+        <a
+          className="py-1 text-sm hover:underline"
+          href="https://www.harbs.co.jp/company/privacy/"
+        >
+          Privacy Policy
+        </a>
+        <a className="py-1 text-sm hover:underline" href="">
+          Terms of Service
+        </a>
       </div>
 
       <div className="flex flex-col">
-        <h4>Work with us</h4>
-        <a href="https://www.harbsnyc.com/hiring/">Careers</a>
-        <a href="https://www.harbsnyc.com/hiring/">Partnerships</a>
+        <h4 className="font-bold border-b text-md">Work with us</h4>
+        <a
+          className="py-1 text-sm hover:underline"
+          href="https://www.harbsnyc.com/hiring/"
+        >
+          Careers
+        </a>
+        <a
+          className="py-1 text-sm hover:underline"
+          href="https://www.harbsnyc.com/hiring/"
+        >
+          Partnerships
+        </a>
       </div>
     </div>
   );
