@@ -9,8 +9,8 @@ const FooterContent = () => {
   return (
     <div className="py-8 border-t px-4 flex flex-col sm:flex-row justify-around mx-auto">
       <div>
-        <h4 className="font-bold text-md">Social Media</h4>
-        <div className="flex gap-4">
+        <h4 className="font-bold text-md border-b">Social Media</h4>
+        <div className="py-1 flex gap-4">
           <a href="https://www.instagram.com/harbs1981/">
             <AiOutlineInstagram size={35} />
           </a>
