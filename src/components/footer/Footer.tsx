@@ -4,7 +4,7 @@ import FooterContent from "./FooterContent";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-white mx-auto px-8 py-16">
       <FooterContent />
       <Copyright />
     </div>
