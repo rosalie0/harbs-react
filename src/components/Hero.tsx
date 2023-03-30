@@ -1,4 +1,5 @@
 import React from "react";
+import HeroButton from "./HeroButton";
 import LemonZesting from "/jpg/lemonZesting.jpeg";
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
           <p className="text-3xl">
             some kind of subtitle that is a little bit longer
           </p>
-          <button className="">Reserve Now</button>
+          <HeroButton />
         </div>
         <div className="lg:col-span-2 -order-1 lg:order-2 my-4 mx-auto lg:m-0 h-full flex flex-col lg:items-end">
           <img
