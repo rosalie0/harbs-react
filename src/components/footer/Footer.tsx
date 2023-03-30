@@ -1,10 +1,11 @@
 import React from "react";
 import Copyright from "./Copyright";
+import FooterContent from "./FooterContent";
 
 const Footer = () => {
   return (
     <div>
-      <div>footer content</div>;
+      <FooterContent />
       <Copyright />
     </div>
   );
