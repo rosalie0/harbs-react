@@ -10,9 +10,9 @@ export default {
         "harbs-brown-darkest": "#3b2014",
       },
       fontFamily: {
-        "cormorant-garamond": ["Cormorant Garamond", serif],
-        "crimson-pro": ["Crimson Pro", serif],
-        taviraj: ["Taviraj", serif],
+        "cormorant-garamond": ["Cormorant Garamond", "serif"],
+        "crimson-pro": ["Crimson Pro", "serif"],
+        taviraj: ["Taviraj", "serif"],
       },
     },
   },
