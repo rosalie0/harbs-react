@@ -8,7 +8,10 @@ const Hero = () => {
   const paragraphText =
     "Handcrafted with only the finest and freshest ingredients, indulge in HARBS deliciousness today.";
   return (
-    <div className="max-w-7xl w-full lg:h-[85svh] mx-auto bg-yellow-200">
+    <div
+      className="max-w-7xl w-full lg:h-[85svh] mx-auto 
+    bg-harbs-yellow"
+    >
       <div
         className="px-8 lg:px-12
       grid lg:grid-cols-3 items-center 
@@ -21,7 +24,7 @@ const Hero = () => {
           >
             {topText}
           </h2>
-          <p className="py-8 pl-4 text-2xl font-taviraj">{paragraphText}</p>
+          <p className="py-8 text-2xl font-taviraj">{paragraphText}</p>
           <HeroButton />
         </div>
         <div className="lg:col-span-2 -order-1 lg:order-2 my-4 mx-auto lg:m-0 h-full flex flex-col lg:items-end">
