@@ -1,6 +1,7 @@
 import React from "react";
 import HeroButton from "./HeroButton";
 import LemonZesting from "/jpg/lemonZesting.jpeg";
+import drawings from "/HRB_top_1680x920_2x 2 2.png";
 const Hero = () => {
   //const topText = 'A Slice of Happiness';
   const topText = "Pure joy in every bite.";
@@ -28,8 +29,8 @@ const Hero = () => {
         </div>
         <div className="lg:col-span-2 -order-1 lg:order-2 my-4 mx-auto lg:m-0  flex flex-col lg:items-end">
           <img
-            className="w-auto lg:max-h-[85vh] max-h-[500px] sm:max-h-[75vh] object-contain"
-            src={LemonZesting}
+            className="w-auto lg:min-h-[85vh] max-h-[500px] sm:max-h-[75vh] object-contain"
+            src={drawings}
           />
         </div>
       </div>
