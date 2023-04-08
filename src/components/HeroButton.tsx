@@ -2,7 +2,10 @@ import React from "react";
 
 const HeroButton = () => {
   return (
-    <button className="bg-white py-4 w-[200px] rounded-md font-medium text-lg">
+    <button
+      className="py-4 w-[200px] rounded-md font-medium text-2xl font-crimson-pro
+    bg-harbs-brown text-white"
+    >
       Reserve Now
     </button>
   );
