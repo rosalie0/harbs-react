@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Crimson Pro', serif;
+font-family: 'Taviraj', serif;
+*/
 .app {
   /* 100vh is the fallback for browsers that don't support dvh */
   min-height: 100vh;
