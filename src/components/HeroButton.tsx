@@ -4,9 +4,9 @@ const HeroButton = () => {
   return (
     <button
       className="py-4 w-[200px] rounded-md font-medium text-2xl font-crimson-pro
-    bg-harbs-brown text-white"
+    bg-harbs-brown text-white shadow-md"
     >
-      Reserve Now
+      Order Now
     </button>
   );
 };
