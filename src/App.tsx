@@ -7,7 +7,7 @@ import viteLogo from "/vite.svg";
 
 function App() {
   return (
-    <div className="app bg-slate-100">
+    <div className="app bg-white">
       <div id="header-placeholder"></div>
       <div className="main">
         <Hero />
