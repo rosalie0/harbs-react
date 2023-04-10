@@ -5,7 +5,7 @@ const CakeCard = ({ cake }: { cake: CakeInterface }) => {
   return (
     <div
       className="flex flex-col items-center 
-    bg-white border"
+    bg-white border shadow-md rounded-sm p-4 w-auto md:w-1/4"
     >
       <img src={cake.imageURL} alt="a photograph of the cake" />
 
