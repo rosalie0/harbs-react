@@ -1,12 +1,8 @@
 import React from "react";
 import CakeCard from "./CakeCard";
+import cakes from "./cakesData";
 
 const Cakes = () => {
-  const mille = {};
-  const sCake = {};
-  const gtm = {};
-  const cakes = [mille, sCake, gtm];
-
   return (
     <div>
       {cakes.map((cake) => (
