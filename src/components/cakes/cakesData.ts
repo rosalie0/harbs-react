@@ -1,6 +1,7 @@
-interface CakeInterface {
+export interface CakeInterface {
   name: string;
   description: string;
+  imageURL: string;
   slicePrice: number;
   wholePrice: number;
 }
@@ -11,6 +12,7 @@ const mille: CakeInterface = {
     "Six layers of thin crepes filled with fresh fruits and mixed cream.",
   slicePrice: 16,
   wholePrice: 160,
+  imageURL: "/cakes/scake.jpg",
 };
 
 const strawberry: CakeInterface = {
@@ -19,6 +21,7 @@ const strawberry: CakeInterface = {
     "Fine fluffy sponge cake with fresh strawberries and smooth whipped cream.",
   slicePrice: 15,
   wholePrice: 150,
+  imageURL: "/cakes/scake.jpg",
 };
 
 const chocolate: CakeInterface = {
@@ -27,8 +30,7 @@ const chocolate: CakeInterface = {
     "Layers of quality chocolate sponge, cream and walnuts with a hint of Brandy.",
   slicePrice: 12,
   wholePrice: 120,
+  imageURL: "/cakes/scake.jpg",
 };
 
-const cakes = [mille, strawberry, chocolate];
-
-export default cakes;
+export const cakes = [mille, strawberry, chocolate];
