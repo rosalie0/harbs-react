@@ -1,6 +1,16 @@
+<div style="text-align: center">
+<img src="public/logos/logo.png" alt="Harbs Logo, featuring the name in big, bold brown letters and a yellow background"/>
+</div>
+<div style="text-align: center">
+<img alt="A badge for typescript" src="https://img.shields.io/badge/Typescript-027bcd?&logo=typescript&logoColor=white" />
+<img alt="A badge for React" src="https://img.shields.io/badge/React-764abc?&logo=react&logoColor=white"/>
+<img alt="A badge for tailwind" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat" />
+<img alt="A badge for Vite" src="https://img.shields.io/badge/Vite-pink?&logo=vite"/>
+</div>
+
 # HARBS - Landing Page
 
-An unofficial landing page for Japanese Cafe, HARBS.
+An unofficial landing page for Japanese Cafe, HARBS, built by [Rosalie Newman](https://github.com/rosalie0) and [Stephen Werbeck](https://www.linkedin.com/in/stephen-werbeck/)
 
 ## Getting Started
 
