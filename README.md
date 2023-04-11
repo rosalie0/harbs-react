@@ -1,4 +1,4 @@
-# HARBS
+# HARBS - Landing Page
 
 An unofficial landing page for Japanese Cafe, HARBS.
 
