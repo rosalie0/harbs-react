@@ -51,3 +51,17 @@ _Rose:_
 > Eager to practice my front end and UX/UI skills, I tasked myself with creating a modern, clean landing page.
 >
 > I missed the social aspect of pair-programming & also wanted insights on designs. So I invited one of my cohort-mates onto the project.
+
+## Credits
+
+### Logos and Illustrations:
+
+- https://www.harbs.co.jp/
+- https://www.harbsnyc.com/
+
+### Location photos:
+
+- https://blankcreations.com/harbs-chelsea-new-york/
+- https://blankcreations.com/harbs-soho/
+
+### Cake photos:
