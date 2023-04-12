@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import Test from "./components/Test";
 import viteLogo from "/vite.svg";
 import Cakes from "./components/cakes/Cakes";
+import Locations from "./components/locations/Locations";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Test />
         <Cakes />
+        <Locations />
         <div>hello</div>
       </div>
       <Footer />
