@@ -16,7 +16,6 @@ function App() {
         <Test />
         <Cakes />
         <Locations />
-        <div>hello</div>
       </div>
       <Footer />
     </div>
