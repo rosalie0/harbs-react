@@ -8,6 +8,7 @@ import viteLogo from "/vite.svg";
 import OurStory from "./components/OurStory";
 
 import Cakes from "./components/cakes/Cakes";
+import Locations from "./components/locations/Locations";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         <OurStory />
         <Test />
         <Cakes />
-        <div>hello</div>
+        <Locations />
       </div>
       <Footer />
     </div>
