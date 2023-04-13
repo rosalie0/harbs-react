@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import SingleLocation from "./SingleLocation";
+import { chelseaData, sohoData } from "./locationsData";
 
 const Locations = () => {
   const [selectedLocation, setSelectedLocation] = useState("chelsea");
-  // Chelsea first.
-  // Soho second.
+
+  const clickHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
+    /* Have to cast 'as HTMLInputElement' inbetween because
+    .value is not guaranteed on any ol' event.target,
+    only specific ones such as HTMLInputElement, which is what a button is anyways. */
+    const value = (event.target as HTMLInputElement).value;
+    setSelectedLocation(value);
+  };
+
   return (
     <div>
       {/* Todo: Discuss if this 'section title' should be a component that gets reused? */}
@@ -18,12 +26,16 @@ const Locations = () => {
       flex justify-center gap-12"
       >
         <button
+          value={"chelsea"}
+          onClick={clickHandler}
           className="py-4 w-[200px] rounded-md font-medium text-2xl font-crimson-pro
     bg-harbs-brown text-white shadow-md"
         >
           Chelsea
         </button>
         <button
+          value={"soho"}
+          onClick={clickHandler}
           className="py-4 w-[200px] rounded-md font-medium text-2xl font-crimson-pro
     bg-harbs-brown text-white shadow-md"
         >
@@ -33,7 +45,7 @@ const Locations = () => {
       {/* Show Chelsea Component if selected location is chelsea */}
       {selectedLocation === "chelsea" && <SingleLocation />}
       {/* Show Soho Component if selected location is chelsea */}
-      {selectedLocation === "soho" && <SingleLocation />}{" "}
+      {selectedLocation === "soho" && <SingleLocation />}
     </div>
   );
 };
