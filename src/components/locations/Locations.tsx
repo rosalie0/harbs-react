@@ -12,7 +12,7 @@ const Locations = () => {
     const value = (event.target as HTMLInputElement).value;
     setSelectedLocation(value);
   };
-
+  console.log("rerender");
   return (
     <div>
       {/* Todo: Discuss if this 'section title' should be a component that gets reused? */}
@@ -42,10 +42,12 @@ const Locations = () => {
           Soho
         </button>
       </div>
-      {/* Show Chelsea Component if selected location is chelsea */}
-      {selectedLocation === "chelsea" && <SingleLocation />}
-      {/* Show Soho Component if selected location is chelsea */}
-      {selectedLocation === "soho" && <SingleLocation />}
+      {/* Conditionally render which component based on selectedLocation,
+      notice props also change */}
+      {selectedLocation === "chelsea" && (
+        <SingleLocation location={chelseaData} />
+      )}
+      {selectedLocation === "soho" && <SingleLocation location={sohoData} />}
     </div>
   );
 };
