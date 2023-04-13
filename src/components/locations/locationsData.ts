@@ -4,6 +4,7 @@ export interface LocationInterface {
   googleMapsUrl: string;
   phoneNumber: string;
   text: string;
+  imageUrls: string[];
 }
 
 export const chelseaData = {
@@ -20,6 +21,9 @@ export const chelseaData = {
   Indoor Dining Service (including food menu) is available until 8:00pm
   (Last food order is at 3:00pm, cakes & drinks until 7:30pm)
   Cake takeout is available until 8:00pm.`,
+
+  // todo:
+  //imageUrls: []
 };
 
 export const sohoData = {
@@ -36,6 +40,9 @@ export const sohoData = {
   Indoor Dining Service (including food menu) is available until 8:00pm
   (Last food order is at 3:00pm, cakes & drinks until 7:30pm)
   Cake takeout is available until 8:00pm.`,
+
+  // todo:
+  //imageUrls: []
 };
 
 export const locationsData = { chelseaData, sohoData };

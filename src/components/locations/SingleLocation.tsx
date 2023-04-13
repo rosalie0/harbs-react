@@ -8,7 +8,10 @@ const SingleLocation = ({ location }: { location: LocationInterface }) => {
       <h2 className="text-5xl p-8 uppercase font-cormorant-garamond">
         {location.name}
       </h2>
-      <Carousel />
+      <Carousel
+      // todo:
+      //imageUrls={location.imageUrls}
+      />
       <h3>
         <span className="font-bold">Address: </span>
         {location.address}
