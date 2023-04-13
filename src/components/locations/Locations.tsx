@@ -12,7 +12,7 @@ const Locations = () => {
     const value = (event.target as HTMLInputElement).value;
     setSelectedLocation(value);
   };
-  console.log("rerender");
+
   return (
     <div>
       {/* Todo: Discuss if this 'section title' should be a component that gets reused? */}
