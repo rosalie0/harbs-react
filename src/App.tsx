@@ -9,7 +9,7 @@ import OurStory from "./components/OurStory";
 
 import Cakes from "./components/cakes/Cakes";
 import Locations from "./components/locations/Locations";
-
+import FinalCTA from "./components/finalCallToAction/FinalCTA";
 
 function App() {
   return (
@@ -21,6 +21,8 @@ function App() {
         <Test />
         <Cakes />
         <Locations />
+        <FinalCTA />
+        <div className="h-20 bg-inherit" />
       </div>
       <Footer />
     </div>
