@@ -47,7 +47,6 @@ const goToSlide = (slideIndex: number) => {
                 </div>
                 
                 ))}
-
         </div>
     </div>
   );
