@@ -11,10 +11,13 @@ const FooterContent = () => {
       <div>
         <h4 className="font-bold text-md border-b">Social Media</h4>
         <div className="py-1 flex gap-4">
-          <a href="https://www.instagram.com/harbs1981/">
+          <a href="https://www.instagram.com/harbs1981/" aria-label="Instagram">
             <AiOutlineInstagram size={35} />
           </a>
-          <a href="https://www.facebook.com/pages/Harbs-Soho/1553774908101878">
+          <a
+            href="https://www.facebook.com/pages/Harbs-Soho/1553774908101878"
+            aria-label="Facebook"
+          >
             <AiOutlineFacebook size={35} />
           </a>
         </div>
