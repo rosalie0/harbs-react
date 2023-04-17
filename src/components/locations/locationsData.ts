@@ -1,3 +1,5 @@
+import LocationCarousel from "./LocationCarousel";
+
 export interface LocationInterface {
   name: string;
   address: string;
@@ -8,6 +10,7 @@ export interface LocationInterface {
 }
 
 export const chelseaData = {
+ 
   name: "Chelsea",
   address: "198 9th Ave, New York, NY 10011",
   googleMapsUrl: "https://goo.gl/maps/tFXJxTJ7LN42",

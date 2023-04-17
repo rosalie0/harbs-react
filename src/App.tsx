@@ -16,7 +16,6 @@ function App() {
       <div id="header-placeholder"></div>
       <div className="main">
         <Hero />
-        <LocationCarousel />
         <OurStory />
         <Test />
         <Cakes />

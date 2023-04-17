@@ -1,17 +1,32 @@
 import React from "react";
 import Carousel from "./Carousel";
+import LocationCarousel from "./LocationCarousel";
 import { LocationInterface } from "./locationsData";
 
 const SingleLocation = ({ location }: { location: LocationInterface }) => {
+
+  const slides = [
+    {url: "/locations/chelsea/harbs01.jpg"},
+    {url: "/locations/chelsea/harbs02.jpg"},
+    {url: "/locations/chelsea/harbs03.jpg"},
+    {url: "/locations/chelsea/harbs04.jpg"},
+    {url: "/locations/chelsea/harbs05.jpg"},
+    {url: "/locations/chelsea/harbs06.jpg"},
+    {url: "/locations/chelsea/harbs07.jpg"},
+    {url: "/locations/chelsea/harbs08.jpg"},
+    {url: "/locations/chelsea/harbs09.jpg"},
+    {url: "/locations/chelsea/harbs10.jpg"},
+    {url: "/locations/chelsea/harbs11.jpg"}
+]    
+
+
+
   return (
     <div className="flex flex-col items-center border border-orange-500 font-crimson-pro text-harbs-brown-darkest">
       <h2 className="text-5xl p-8 uppercase font-cormorant-garamond">
         {location.name}
       </h2>
-      <Carousel
-      // todo:
-      //imageUrls={location.imageUrls}
-      />
+      <LocationCarousel slides={slides}/>
       <h3>
         <span className="font-bold">Address: </span>
         {location.address}

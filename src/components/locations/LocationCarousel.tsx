@@ -2,8 +2,12 @@ import React, {useState} from "react";
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled, RxDot} from 'react-icons/rx'
 
+interface slideInterface {
+    url: string
+}
 
-const LocationCarousel = () => {
+
+const LocationCarousel = ({slides}: {slides: slideInterface[]}) => {
 
     /* make an array of objects with image file paths as the values as pass in as prop 
      
@@ -16,19 +20,19 @@ const LocationCarousel = () => {
     
     
     */
-const slides = [
-    {url: "/locations/chelsea/harbs01.jpg"},
-    {url: "/locations/chelsea/harbs02.jpg"},
-    {url: "/locations/chelsea/harbs03.jpg"},
-    {url: "/locations/chelsea/harbs04.jpg"},
-    {url: "/locations/chelsea/harbs05.jpg"},
-    {url: "/locations/chelsea/harbs06.jpg"},
-    {url: "/locations/chelsea/harbs07.jpg"},
-    {url: "/locations/chelsea/harbs08.jpg"},
-    {url: "/locations/chelsea/harbs09.jpg"},
-    {url: "/locations/chelsea/harbs10.jpg"},
-    {url: "/locations/chelsea/harbs11.jpg"}
-]    
+// const slides = [
+//     {url: "/locations/chelsea/harbs01.jpg"},
+//     {url: "/locations/chelsea/harbs02.jpg"},
+//     {url: "/locations/chelsea/harbs03.jpg"},
+//     {url: "/locations/chelsea/harbs04.jpg"},
+//     {url: "/locations/chelsea/harbs05.jpg"},
+//     {url: "/locations/chelsea/harbs06.jpg"},
+//     {url: "/locations/chelsea/harbs07.jpg"},
+//     {url: "/locations/chelsea/harbs08.jpg"},
+//     {url: "/locations/chelsea/harbs09.jpg"},
+//     {url: "/locations/chelsea/harbs10.jpg"},
+//     {url: "/locations/chelsea/harbs11.jpg"}
+// ]    
 
 const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -49,7 +53,7 @@ const goToSlide = (slideIndex: number) => {
 
 
   return (
-    <div className='border-4 max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative'>
+    <div className='border-4 max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative overflow-x-hidden'>
     
         <div className="flex flex-row items-center content-center lg:justify-around max-w-[1400px]">
         <img src={currentIndex === 0 ? `${slides[slides.length-1].url}` : `${slides[currentIndex-1].url}`} className="w-auto  min-h-[50px] max-h-[300px] opacity-50"></img>
