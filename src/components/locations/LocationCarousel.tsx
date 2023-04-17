@@ -49,9 +49,9 @@ const goToSlide = (slideIndex: number) => {
 
 
   return (
-    <div className='border-4 border-harbs-brown max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative'>
+    <div className='border-4 max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative'>
     
-        <div className="flex flex-row items-center content-center lg:justify-around">
+        <div className="flex flex-row items-center content-center lg:justify-around max-w-[1400px]">
         <img src={currentIndex === 0 ? `${slides[slides.length-1].url}` : `${slides[currentIndex-1].url}`} className="w-auto  min-h-[50px] max-h-[300px] opacity-50"></img>
         <img src={`${slides[currentIndex].url}`} className="w-auto  min-h-[80px] max-h-[500px] m-10"></img>
         <img src={currentIndex === slides.length-1 ? `${slides[0].url}` : `${slides[currentIndex+1].url}`} className="w-auto  min-h-[50px] max-h-[300px] opacity-50"></img>
@@ -62,7 +62,7 @@ const goToSlide = (slideIndex: number) => {
         <div className="flex top-4 justify-center py-2">
             {slides.map((slide, slideIndex) => (
                 <div key={slideIndex} onClick={() => goToSlide(slideIndex)}>
-                    {slideIndex===currentIndex ? <RxDotFilled fill-red/> : <RxDot />}
+                    {slideIndex===currentIndex ? <RxDotFilled  /> : <RxDot className="hover:text-brown-500 cursor-pointer"  />}
                 </div>
                 
                 ))}
