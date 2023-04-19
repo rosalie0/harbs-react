@@ -4,7 +4,8 @@ export interface CakeInterface {
   imageURL: string;
   slicePrice: number;
   wholePrice: number;
-  alcohol?: "none" | "some" | "strong";
+  alcoholAmount: 0 | 0.5 | 1 | 1.5 | 2;
+  bestSeller?: boolean;
 }
 
 const mille: CakeInterface = {
@@ -14,7 +15,8 @@ const mille: CakeInterface = {
   slicePrice: 16,
   wholePrice: 160,
   imageURL: "/cakes/savorjapan/mille.jpg",
-  alcohol: "some",
+  alcoholAmount: 0.5,
+  bestSeller: true,
 };
 
 const strawberry: CakeInterface = {
@@ -24,7 +26,7 @@ const strawberry: CakeInterface = {
   slicePrice: 15,
   wholePrice: 150,
   imageURL: "/cakes/savorjapan/strawberry.jpg",
-  alcohol: "none",
+  alcoholAmount: 0,
 };
 
 const chocolate: CakeInterface = {
@@ -34,7 +36,7 @@ const chocolate: CakeInterface = {
   slicePrice: 12,
   wholePrice: 120,
   imageURL: "/cakes/savorjapan/chocolate.jpg",
-  alcohol: "strong",
+  alcoholAmount: 2,
 };
 
 export const cakes = [strawberry, mille, chocolate];
