@@ -14,10 +14,7 @@ const Cakes = () => {
       </h3>
       <div className="border-b-2 pt-2 border-harbs-brown-darkest w-64 mx-auto" />
 
-      <div
-        className="flex flex-wrap justify-center gap-4
-      py-12"
-      >
+      <div className="flex flex-wrap justify-center items-center gap-4 py-12">
         {cakes.map((cake) => (
           <CakeCard cake={cake} key={cake.name} />
         ))}

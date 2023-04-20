@@ -5,7 +5,7 @@ export interface CakeInterface {
   slicePrice: number;
   wholePrice: number;
   alcoholAmount: 0 | 0.5 | 1 | 1.5 | 2;
-  bestSeller?: boolean;
+  isBestSeller?: boolean;
 }
 
 const mille: CakeInterface = {
@@ -16,7 +16,7 @@ const mille: CakeInterface = {
   wholePrice: 160,
   imageURL: "/cakes/savorjapan/mille.jpg",
   alcoholAmount: 0.5,
-  bestSeller: true,
+  isBestSeller: true,
 };
 
 const strawberry: CakeInterface = {
