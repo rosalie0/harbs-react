@@ -8,7 +8,6 @@ const Cakes = () => {
     <div
       className="
       flex flex-col items-center py-12
-    border-lime-300 border-4
     bg-harbs-yellow-lightest"
     >
       <h3 className="text-5xl uppercase italic font-cormorant-garamond text-center text-harbs-brown-darkest">
