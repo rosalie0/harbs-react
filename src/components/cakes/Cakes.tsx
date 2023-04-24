@@ -17,7 +17,7 @@ const Cakes = () => {
 
       <CakeSectionInfo />
 
-      <div className="flex flex-wrap justify-center items-center gap-4 py-12">
+      <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-8 py-12">
         {cakes.map((cake) => (
           <CakeCard cake={cake} key={cake.name} />
         ))}
