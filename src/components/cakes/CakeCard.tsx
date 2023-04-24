@@ -1,5 +1,6 @@
 import React from "react";
 import { CakeInterface } from "./cakesData";
+import AlcoholText from "./AlcoholText";
 
 const CakeCard = ({ cake }: { cake: CakeInterface }) => {
   const width = cake.isBestSeller ? "md:w-1/3" : "md:w-1/4";
@@ -54,6 +55,8 @@ const CakeCard = ({ cake }: { cake: CakeInterface }) => {
           <p className="self-center text-center max-w-[320px]">
             {cake.description}
           </p>
+
+          <AlcoholText alcoholAmount={cake.alcoholAmount} />
         </div>
       </div>
     </div>

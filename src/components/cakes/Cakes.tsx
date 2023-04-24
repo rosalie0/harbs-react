@@ -1,11 +1,13 @@
 import React from "react";
 import CakeCard from "./CakeCard";
 import { cakes } from "./cakesData";
+import CakeSectionInfo from "./CakeSectionInfo";
 
 const Cakes = () => {
   return (
     <div
-      className="py-12
+      className="
+      flex flex-col items-center py-12
     border-lime-300 border-4
     bg-harbs-yellow-lightest"
     >
@@ -13,6 +15,8 @@ const Cakes = () => {
         Featured Cakes
       </h3>
       <div className="border-b-2 pt-2 border-harbs-brown-darkest w-64 mx-auto" />
+
+      <CakeSectionInfo />
 
       <div className="flex flex-wrap justify-center items-center gap-4 py-12">
         {cakes.map((cake) => (
