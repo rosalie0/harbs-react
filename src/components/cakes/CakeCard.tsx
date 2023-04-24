@@ -1,6 +1,7 @@
 import React from "react";
 import { CakeInterface } from "./cakesData";
 import AlcoholText from "./AlcoholText";
+import BestSellerBannerOnCard from "./BestSellerBannerOnCard";
 
 const CakeCard = ({ cake }: { cake: CakeInterface }) => {
   const width = cake.isBestSeller ? "md:w-1/3" : "md:w-1/4";
@@ -12,11 +13,7 @@ const CakeCard = ({ cake }: { cake: CakeInterface }) => {
     "flex flex-col items-center bg-white border shadow-md rounded-sm w-auto md:w-1/3";
   return (
     <div className="flex flex-col items-center bg-white shadow-md rounded-sm w-auto md:w-1/4 h-auto font-crimson-pro">
-      {cake.isBestSeller && (
-        <div className="uppercase text-center h-10 w-full pt-2 bg-harbs-yellow text-harbs-brown">
-          <p>best seller</p>
-        </div>
-      )}
+      {cake.isBestSeller && <BestSellerBannerOnCard />}
       <div>
         <div className="p-4 flex flex-col">
           <img src={cake.imageURL} alt="a photograph of the cake" />
