@@ -4,6 +4,8 @@ export interface CakeInterface {
   imageURL: string;
   slicePrice: number;
   wholePrice: number;
+  alcoholAmount: 0 | 0.5 | 1 | 1.5 | 2;
+  isBestSeller?: boolean;
 }
 
 const mille: CakeInterface = {
@@ -12,7 +14,9 @@ const mille: CakeInterface = {
     "Six layers of thin crepes filled with fresh fruits and mixed cream.",
   slicePrice: 16,
   wholePrice: 160,
-  imageURL: "/cakes/scake.jpg",
+  imageURL: "/cakes/savorjapan/mille.jpg",
+  alcoholAmount: 0.5,
+  isBestSeller: true,
 };
 
 const strawberry: CakeInterface = {
@@ -21,7 +25,8 @@ const strawberry: CakeInterface = {
     "Fine fluffy sponge cake with fresh strawberries and smooth whipped cream.",
   slicePrice: 15,
   wholePrice: 150,
-  imageURL: "/cakes/scake.jpg",
+  imageURL: "/cakes/savorjapan/strawberry.jpg",
+  alcoholAmount: 0,
 };
 
 const chocolate: CakeInterface = {
@@ -30,7 +35,8 @@ const chocolate: CakeInterface = {
     "Layers of quality chocolate sponge, cream and walnuts with a hint of Brandy.",
   slicePrice: 12,
   wholePrice: 120,
-  imageURL: "/cakes/scake.jpg",
+  imageURL: "/cakes/savorjapan/chocolate.jpg",
+  alcoholAmount: 2,
 };
 
-export const cakes = [mille, strawberry, chocolate];
+export const cakes = [strawberry, mille, chocolate];
