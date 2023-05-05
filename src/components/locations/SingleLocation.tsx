@@ -4,7 +4,7 @@ import { LocationInterface } from "./locationsData";
 
 const SingleLocation = ({ location }: { location: LocationInterface }) => {
   return (
-    <div className="flex flex-col items-center border border-orange-500 font-crimson-pro text-harbs-brown-darkest">
+    <div className="flex flex-col items-center font-crimson-pro text-harbs-brown-darkest">
       <h2 className="text-5xl p-8 uppercase font-cormorant-garamond">
         {location.name}
       </h2>
@@ -15,14 +15,14 @@ const SingleLocation = ({ location }: { location: LocationInterface }) => {
       </h3>
 
       <h3>Business Hours:</h3>
-      <div className="border px-5 m-4">
+      <div className="px-5 m-4">
         <h4>Monday - Thursday</h4>
         <p>Cake Take-Out: 11:00am - 6:00pm</p>
         <p>Cake & Drinks Dine-In: 11:00am - 5:30pm</p>
         <p className="italic">Lunch Unavailable | Drinks close at 5:30pm</p>
       </div>
 
-      <div className="border px-5 m-4">
+      <div className="px-5 m-4">
         <h4>Friday - Sunday</h4>
         <p>Cake Take-Out: 11:00am - 8:00pm</p>
         <p>Lunch Dine-In: 11:00am - 3:00pm</p>
