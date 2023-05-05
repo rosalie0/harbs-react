@@ -11,6 +11,7 @@ font-family: 'Taviraj', serif;
   /* 100vh is the fallback for browsers that don't support dvh */
   min-height: 100vh;
   min-height: 100dvh;
+  /* grid and this template is used for footer */
   display: grid;
   grid-template-rows: auto 1fr auto;
 }

@@ -49,7 +49,7 @@ const LocationCarousel = ({ slides }: { slides: slideInterface[] }) => {
   };
 
   return (
-    <div className="border-4 max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative overflow-x-hidden">
+    <div className=" max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative overflow-x-hidden">
       <div className="flex flex-row items-center content-center justify-center max-w-[1400px]">
         {/* left */}
         <img

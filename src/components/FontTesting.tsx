@@ -1,6 +1,6 @@
 import React from "react";
 
-function Test() {
+function FontTesting() {
   return (
     <div className="p-12 text-harbs-brown bg-harbs-yellow">
       <p className="uppercase font-cormorant-garamond text-3xl font-bold">
@@ -97,4 +97,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default FontTesting;

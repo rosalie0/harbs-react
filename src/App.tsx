@@ -1,14 +1,10 @@
 import React from "react";
-import reactLogo from "./assets/react.svg";
 import Hero from "./components/Hero";
 import Footer from "./components/footer/Footer";
-import Test from "./components/Test";
-import viteLogo from "/vite.svg";
 import OurStory from "./components/OurStory";
 import Cakes from "./components/cakes/Cakes";
 import Locations from "./components/locations/Locations";
 import FinalCTA from "./components/finalCallToAction/FinalCTA";
-import LocationCarousel from "./components/locations/LocationCarousel";
 
 function App() {
   return (
@@ -17,10 +13,11 @@ function App() {
       <div className="main">
         <Hero />
         <OurStory />
-        <Test />
         <Cakes />
         <Locations />
         <FinalCTA />
+        {/* below is just a div that acts as space filler / padding. 
+        Todo: incorporate this into perhaps, finalCTA. */}
         <div className="h-20 bg-inherit" />
       </div>
       <Footer />
