@@ -1,19 +1,14 @@
 import React from "react";
-import Carousel from "./Carousel";
 import LocationCarousel from "./LocationCarousel";
 import { LocationInterface } from "./locationsData";
 
 const SingleLocation = ({ location }: { location: LocationInterface }) => {
-
-
-console.log(location)
-
   return (
     <div className="flex flex-col items-center border border-orange-500 font-crimson-pro text-harbs-brown-darkest">
       <h2 className="text-5xl p-8 uppercase font-cormorant-garamond">
         {location.name}
       </h2>
-      <LocationCarousel slides={location.imageUrls}/>
+      <LocationCarousel slides={location.imageUrls} />
       <h3>
         <span className="font-bold">Address: </span>
         {location.address}
