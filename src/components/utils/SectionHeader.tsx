@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionHeader = ({ title }: { title: string }) => {
   return (
-    <div>
+    <div className="py-6">
       <h3 className="text-5xl uppercase italic font-cormorant-garamond text-center text-harbs-brown-darkest">
         {title}
       </h3>
