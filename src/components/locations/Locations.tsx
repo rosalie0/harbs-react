@@ -28,17 +28,11 @@ const Locations = () => {
         <button
           value={"chelsea"}
           onClick={clickHandler}
-          className="py-4 w-[200px] rounded-md font-medium text-2xl font-crimson-pro
-    bg-harbs-brown text-white shadow-md"
+          className="btn-secondary"
         >
           Chelsea
         </button>
-        <button
-          value={"soho"}
-          onClick={clickHandler}
-          className="py-4 w-[200px] rounded-md font-medium text-2xl font-crimson-pro
-    bg-harbs-brown text-white shadow-md"
-        >
+        <button value={"soho"} onClick={clickHandler} className="btn-secondary">
           Soho
         </button>
       </div>
