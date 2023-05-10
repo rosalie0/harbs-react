@@ -27,8 +27,8 @@ const Locations = () => {
       <div className="border-b-2 pt-2 border-harbs-brown-darkest w-64 mx-auto" />
       <div
         className="location-button-container
-        p-12
-      flex justify-center gap-12"
+        p-6
+      flex justify-center gap-20"
       >
         <button
           value={"chelsea"}
