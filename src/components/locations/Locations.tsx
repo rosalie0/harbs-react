@@ -13,6 +13,11 @@ const Locations = () => {
     setSelectedLocation(value);
   };
 
+  const clickedBtnStyles =
+    "py-2 w-[100px] rounded-md font-medium text-xl font-cormorant-garamond bg-harbs-brown text-white shadow-md border-harbs-brown-darkest border-2";
+  const unclickedBtnStyles =
+    "py-2 w-[100px] rounded-md font-medium text-xl font-cormorant-garamond bg-white text-harbs-brown-darkest shadow-md border-harbs-brown-darkest border-2";
+
   return (
     <div>
       {/* Todo: Discuss if this 'section title' should be a component that gets reused? */}
@@ -28,11 +33,21 @@ const Locations = () => {
         <button
           value={"chelsea"}
           onClick={clickHandler}
-          className="btn-secondary"
+          className={
+            selectedLocation === "chelsea"
+              ? clickedBtnStyles
+              : unclickedBtnStyles
+          }
         >
           Chelsea
         </button>
-        <button value={"soho"} onClick={clickHandler} className="btn-secondary">
+        <button
+          value={"soho"}
+          onClick={clickHandler}
+          className={
+            selectedLocation === "soho" ? clickedBtnStyles : unclickedBtnStyles
+          }
+        >
           Soho
         </button>
       </div>

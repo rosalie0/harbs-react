@@ -20,8 +20,3 @@ font-family: 'Taviraj', serif;
   @apply py-4 w-[200px] rounded-md font-medium text-2xl font-crimson-pro
   bg-harbs-brown text-white shadow-md;
 }
-
-.btn-secondary {
-  @apply py-2 w-[100px] rounded-md font-medium text-xl font-crimson-pro
-  bg-white text-harbs-brown-darkest shadow-md border-harbs-brown-darkest border-2;
-}

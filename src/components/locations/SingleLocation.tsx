@@ -5,9 +5,9 @@ import { LocationInterface } from "./locationsData";
 const SingleLocation = ({ location }: { location: LocationInterface }) => {
   return (
     <div className="flex flex-col items-center font-crimson-pro text-harbs-brown-darkest">
-      <h2 className="text-5xl p-8 uppercase font-cormorant-garamond">
+      {/* <h2 className="text-5xl p-8 uppercase font-cormorant-garamond">
         {location.name}
-      </h2>
+      </h2> */}
       <LocationCarousel slides={location.imageUrls} />
       <h3>
         <span className="font-bold">Address: </span>
