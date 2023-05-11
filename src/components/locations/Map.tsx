@@ -1,18 +1,11 @@
-import React, { memo, useCallback, useState } from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import React, { memo, useCallback, useMemo, useState } from "react";
+import { GoogleMap, MarkerF, useJsApiLoader } from "@react-google-maps/api";
+import { CoordinateInterface } from "./locationsData";
 
-const containerStyle = {
-  width: "400px",
-  height: "400px",
-};
+const Map = ({ coordinates }: { coordinates: CoordinateInterface }) => {
+  const memoCoordinates = useMemo(() => coordinates, []);
 
-const chelseaCenter = {
-  lat: 40.745849,
-  lng: -74.001548,
-};
-const center = chelseaCenter;
-
-const Map = () => {
+  //console.log(coordinates);
   const [map, setMap] = useState(null);
   const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "";
 
@@ -22,10 +15,9 @@ const Map = () => {
   });
 
   const onLoad = useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds();
-
+    const bounds = new window.google.maps.LatLngBounds(memoCoordinates);
+    // commented out because it zooms it in too far on first load.
+    //map.fitBounds(bounds);
     setMap(map);
   }, []);
 
@@ -35,12 +27,16 @@ const Map = () => {
 
   return isLoaded ? (
     <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={chelseaCenter}
+      mapContainerClassName="w-[400px] h-[400px]"
+      zoom={15}
+      center={memoCoordinates}
       onLoad={onLoad}
-    ></GoogleMap>
+      onUnmount={onUnmount}
+    >
+      <MarkerF position={memoCoordinates} />
+    </GoogleMap>
   ) : (
-    <div></div>
+    <div>loading google map...</div>
   );
 };
 

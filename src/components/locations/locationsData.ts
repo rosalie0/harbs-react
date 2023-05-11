@@ -2,7 +2,7 @@ interface slideInterface {
   url: string;
 }
 
-interface Coordinate {
+export interface CoordinateInterface {
   lat: number;
   lng: number;
 }
@@ -13,7 +13,7 @@ export interface LocationInterface {
   phoneNumber: string;
   text: string;
   imageUrls: slideInterface[];
-  coordinates: Coordinate;
+  coordinates: CoordinateInterface;
 }
 
 export const chelseaData: LocationInterface = {
@@ -70,8 +70,7 @@ export const sohoData: LocationInterface = {
     { url: "/locations/soho/HARBS_SOHO_07.jpg" },
     { url: "/locations/soho/HARBS3_1920x1080.jpg" },
   ],
-  // todo: update with soho's coordinates. these are still chelseas.
-  coordinates: { lat: 40.745849, lng: -74.001548 },
+  coordinates: { lat: 40.7263606, lng: -74.000036 },
 };
 
 export const locationsData = { chelseaData, sohoData };
