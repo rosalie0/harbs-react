@@ -14,14 +14,14 @@ const Map = ({ coordinates }: { coordinates: CoordinateInterface }) => {
     googleMapsApiKey,
   });
 
-  const onLoad = useCallback(function callback(map) {
+  const onLoad = useCallback(function callback(map: any) {
     const bounds = new window.google.maps.LatLngBounds(memoCoordinates);
     // commented out because it zooms it in too far on first load.
     //map.fitBounds(bounds);
     setMap(map);
   }, []);
 
-  const onUnmount = useCallback(function callback(map) {
+  const onUnmount = useCallback(function callback(map: any) {
     setMap(null);
   }, []);
 
