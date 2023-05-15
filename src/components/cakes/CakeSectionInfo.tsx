@@ -3,7 +3,7 @@ import React from "react";
 const CakeSectionInfo = () => {
   return (
     <div
-      className="max-w-4xl pt-10 px-4
+      className="max-w-4xl px-4
       font-cormorant-garamond text-harbs-brown-darkest text-lg"
     >
       <p>
