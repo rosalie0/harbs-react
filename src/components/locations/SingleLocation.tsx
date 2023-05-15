@@ -1,6 +1,7 @@
 import React from "react";
 import LocationCarousel from "./LocationCarousel";
 import { LocationInterface } from "./locationsData";
+import Map from "./Map";
 
 const SingleLocation = ({ location }: { location: LocationInterface }) => {
   return (
@@ -31,9 +32,10 @@ const SingleLocation = ({ location }: { location: LocationInterface }) => {
           Lunch Set Unavailable | Drink Take-Out closes at 7:30pm
         </p>
       </div>
-      <div className="h-[400px] w-[500px] bg-slate-400">
+      <Map coordinates={location.coordinates} />
+      {/* <div className="h-[400px] w-[500px] bg-slate-400">
         Google Maps API Placeholder
-      </div>
+      </div> */}
     </div>
   );
 };
